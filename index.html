@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +9,51 @@
     <link rel="shortcut icon" href="assets/img/logo.webp">
     <title>New Game</title>
 </head>
+
 <body>
+    <header>
+        <div class="title">
+            <h1>Jeu du Pierre-Feuille-Ciseaux</h1>
+        </div>
+        <button id="rules-btn">Règles</button>
+    </header>
     <div class="page">
         <div class="gamer">
-            <p>You</p>
+            <p class="user">You</p>
         </div>
         <div class="game">
-            <div class="title">
-                <h1>Jeu du Pierre-Feuille-Ciseaux</h1>
-            </div>
-                <p>Score :</p>
+            <p>Score :</p>
             <div class="score">
-                <div class="user" id="user">0</div>
-                <div class="computer" id="computer">0</div>
+                <p id="user">0</p>
+                <p id="computer">0</p>
             </div>
-            <div class="results"></div>
+            <div class="results">
+
+            </div>
         </div>
         <div class="gamer">
-            <p class="adv">Computer</p>
+            <p class="computer">Computer</p>
         </div>
     </div>
     
+    <div id="rules">
+        <h2>Rules</h2>
+        <p>Le jeu est simple, vous devez choisir entre Pierre, Feuille ou Ciseaux. L'ordinateur fera de même. Le
+            gagnant est déterminé par les règles suivantes :</p>
+        <ul>
+            <li>Pierre bat Ciseaux</li>
+            <li>Ciseaux bat Feuille</li>
+            <li>Feuille bat Pierre</li>
+        </ul>
+        <p>Si les deux parties ont fait le même choix, personne de gagne de point.</p>
+        <p>Le jeu se joue en 5 manches, le joueur avec le plus de points à la fin des 5 manches gagne la partie.</p>
+        <button id="close-btn">Fermer</button>
+    </div>
+
 
 
 
     <script src="assets/js/Script.js"></script>
 </body>
+
 </html>
