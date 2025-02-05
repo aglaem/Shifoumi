@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/Style.css">
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <title>Shifoumi version Big Bang Theory</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>Jeu du Pierre-Feuille-Ciseaux</h1>
+        </div>
+        <button id="rules-btn">Règles</button>
+    </header>
+    <div class="game">
+        <div class="gamer">
+            <p class="user">Moi</p>
+            <div class="player-btn">
+                <div class="game-choice" id="user-rock">
+                    <p>Pierre</p>
+                    <button class="game-btn"><img src="assets/img/rock.png" alt="rock"></button>
+                </div>
+                <div class="game-choice" id="user-paper">
+                    <p>Feuille</p>
+                    <button class="game-btn"><img src="assets/img/paper.png" alt="paper"></button>
+                </div>
+                <div class="game-choice" id="user-scissors">
+                    <p>Ciseaux</p>
+                    <button class="game-btn"><img src="assets/img/scissors.png" alt="scissors"
+                           ></button>
+                </div>
+                <div class="game-choice" id="user-lizard">
+                    <p>Lézard</p>
+                    <button class="game-btn"><img src="assets/img/lizard.png" alt="lizard"></button>
+                </div>
+                <div class="game-choice" id="user-spock">
+                    <p>Spock</p>
+                    <button class="game-btn"><img src="assets/img/spock.png" alt="spock"></button>
+                </div>
+            </div>
+        </div>
+        <div class="game-score">
+            <div class="score-result">
+                <p>Score :</p>
+                <div class="score">
+                    <p id="user-score">0</p>
+                    <p id="computer-score">0</p>
+                </div>
+            </div>
+            <div class="resulats">
+                <p class="text-results" id="result"></p>
+            </div>
+            <input type="button" value="Rejouer" id="replay-btn">
+            <input type="button" value="Refaire une partie" id="reset-btn">
+        </div>
+        <div class="gamer">
+            <p class="user">Ordinateur</p>
+            <div class="player-btn">
+                <button class="game-btn computer-btn"><img src="assets/img/rock.png" alt="rock"
+                        id="computer-rock"></button>
+                <button class="game-btn computer-btn"><img src="assets/img/paper.png" alt="paper"
+                        id="computer-paper"></button>
+                <button class="game-btn computer-btn"><img src="assets/img/scissors.png" alt="scissors"
+                        id="computer-scissors"></button>
+                <button class="game-btn computer-btn"><img src="assets/img/lizard.png" alt="lizard"
+                        id="computer-lizard"></button>
+                <button class="game-btn computer-btn"><img src="assets/img/spock.png" alt="spock"
+                        id="computer-spock"></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="rules">
+        <h2>Rules</h2>
+        <p>Le jeu est simple, vous devez choisir entre Pierre, Feuille, Ciseaux, Lézard ou Spock. L'ordinateur fera de
+            même. Le
+            gagnant est déterminé par les règles suivantes :</p>
+        <ul>
+            <li>Pierre bat Ciseaux et lézard</li>
+            <li>Ciseaux bat Feuille et lézard</li>
+            <li>Feuille bat Pierre et Spock</li>
+            <li>Lézard bat Spock et Feuille</li>
+            <li>Spock bat Ciseaux et Pierre</li>
+        </ul>
+        <p>Si les deux parties ont fait le même choix, personne de gagne de point.</p>
+        <p>Le jeu se joue en 5 manches, le joueur avec le plus de points à la fin des 5 manches gagne la partie.</p>
+        <button id="close-btn">Fermer</button>
+    </div>
+
+
+
+
+    <script src="assets/js/Script.js"></script>
+</body>
+
+</html>
